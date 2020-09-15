@@ -59,11 +59,12 @@ def GetSocialToken():
 
 def CheckBrokerToken():
     header = GetBrokerHeader()
-    url = read_config('projectname', 'evn_baseurl') + '/api/queryTagList'
-    date ={"trading_server":"hub_ta_1"}
+    url = read_config('projectname', 'evn_baseurl') + '/api/showAllBrokerUsers'
+    data ={"current_page": 1,
+           "per_page": 50}
     try:
-        r = webrequests().get(url = url,headers=header,params=date)
-        if '40013' in r[1].text:
+        r = webrequests().post_json(url = url,headers=header,data=data)
+        if '401' in r[1].text:
             GetBrokerToken()
     except BaseException as e:
         Log().error(e)
