@@ -8,6 +8,7 @@ from comm.logger import Log
 from comm.readdoc import read_config, write_config
 from comm.getdefname import get_current_function_name
 from comm.requestmethod import webrequests
+import json
 
 
 _header = {
@@ -27,12 +28,14 @@ class TestGetToken():
             "username": "mary00@qq.com",
             "password": "Lb123456",
             "is_remembered": "false",
-            "validate_cmd": 1
+            "validate_cmd": 2
         }
+        a = json.dumps(data) #Python字典转换为json
         Log().info("%s.%s" %(self.__class__.__name__,get_current_function_name()) +"     ***Test Start***")
 
         try:
-            r = webrequests().post(url=_url, data=data, headers=_header)
+            r = webrequests().post(url=_url, data=a, headers=_header)
+            Log().error(r[1].text)
             assert r[0] == 200
             assert 'user_with_token' in r[1].text
         except BaseException as e:
