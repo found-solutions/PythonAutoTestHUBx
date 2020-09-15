@@ -1,0 +1,7 @@
+[32mINFO    [0m root:logger.py:50 TestGetToken.test_01_Normal     ***Test Start***
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:813 Starting new HTTPS connection (1): staging-portal-api.trademax.global:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:393 https://staging-portal-api.trademax.global:443 "POST /api/authorizations/admin HTTP/1.1" 200 None
+[32mINFO    [0m root:logger.py:50 请求的内容：{'username': 'godjay', 'password': 'Lb123456', 'language': 'en', 'platform': 'web'}
+[32mINFO    [0m root:logger.py:50 获取返回的状态码：200
+[32mINFO    [0m root:logger.py:50 =========>>PASSED
+[32mINFO    [0m root:logger.py:50 TestGetToken.test_01_Normal     ***Test End***

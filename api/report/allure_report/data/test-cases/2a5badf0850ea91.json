@@ -1,0 +1,80 @@
+{
+  "uid" : "2a5badf0850ea91",
+  "name" : "test_01_Normal",
+  "fullName" : "lifebyte_new_crm.test_001_gettoken.TestGetToken#test_01_Normal",
+  "historyId" : "4b53da55827612f4e164b8191297a219",
+  "time" : {
+    "start" : 1573034533203,
+    "stop" : 1573034533361,
+    "duration" : 158
+  },
+  "description" : "用户名，密码正确",
+  "descriptionHtml" : "<p>用户名，密码正确</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'access_token' in {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200}\n +  where {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200} = <bound method Response.json of <Response [200]>>()\n +    where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+  "statusTrace" : "self = <test_001_gettoken.TestGetToken object at 0x000002A5BC0ED710>\n\n    @pytest.mark.level_1\n    def test_01_Normal(self):\n        '''用户名，密码正确'''\n        data = {\n            \"username\": \"test1\",\n            \"password\": \"Lb123456\",\n            \"language\": \"en\",\n            \"platform\": \"web\"\n        }\n        Log().info(\"%s.%s\" %(self.__class__.__name__,get_current_function_name()) +\"     ***Test Start***\")\n        r = webrequests().post(url=_url, data=data, headers=_header)\n    \n        try:\n    \n            assert r[0] == 200\n>           assert 'access_token' in r[1].json()\nE           AssertionError: assert 'access_token' in {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200}\nE            +  where {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200} = <bound method Response.json of <Response [200]>>()\nE            +    where <bound method Response.json of <Response [200]>> = <Response [200]>.json\n\nlifebyte_new_crm\\test_001_gettoken.py:38: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "用户名，密码正确",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'access_token' in {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200}\n +  where {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200} = <bound method Response.json of <Response [200]>>()\n +    where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+    "statusTrace" : "self = <test_001_gettoken.TestGetToken object at 0x000002A5BC0ED710>\n\n    @pytest.mark.level_1\n    def test_01_Normal(self):\n        '''用户名，密码正确'''\n        data = {\n            \"username\": \"test1\",\n            \"password\": \"Lb123456\",\n            \"language\": \"en\",\n            \"platform\": \"web\"\n        }\n        Log().info(\"%s.%s\" %(self.__class__.__name__,get_current_function_name()) +\"     ***Test Start***\")\n        r = webrequests().post(url=_url, data=data, headers=_header)\n    \n        try:\n    \n            assert r[0] == 200\n>           assert 'access_token' in r[1].json()\nE           AssertionError: assert 'access_token' in {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200}\nE            +  where {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200} = <bound method Response.json of <Response [200]>>()\nE            +    where <bound method Response.json of <Response [200]>> = <Response [200]>.json\n\nlifebyte_new_crm\\test_001_gettoken.py:38: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "290fba4e96c7caf7",
+      "name" : "log",
+      "source" : "290fba4e96c7caf7.txt",
+      "type" : "text/plain",
+      "size" : 2845
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "level_1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "lifebyte_new_crm"
+  }, {
+    "name" : "suite",
+    "value" : "test_001_gettoken"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetToken"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-iunu"
+  }, {
+    "name" : "thread",
+    "value" : "15152-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "lifebyte_new_crm.test_001_gettoken"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "level_1" ]
+  },
+  "source" : "2a5badf0850ea91.json",
+  "parameterValues" : [ ]
+}

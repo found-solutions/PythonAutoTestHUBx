@@ -1,0 +1,15 @@
+{
+  "funding_method_id": "2",
+  "trading_server_id": "1",
+  "external_id": "319057",
+  "template": "Bank_Wire_AU",
+  "fund_amount": "10",
+  "payment_currency": "USD",
+  "account_ABN": "4324324",
+  "bank_name": "yali",
+  "bank_account_number": "123456448494494",
+  "BSB": "324242",
+  "swift_code": "432423423",
+  "account_holder_name": "yali",
+  "is_save": "0"
+}

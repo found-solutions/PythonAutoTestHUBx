@@ -1,0 +1,10 @@
+requests
+#selenium==2.48.0
+pymysql
+sshtunnel
+pytest
+pytest-html
+allure-pytest
+pytest-xdist
+pytest-rerunfailures
+#locust

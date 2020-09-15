@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Nov 07 11:11:37 CST 2019","Thu Nov 07 11:11:37 CST 2019","143","lifebyte_new_crm","test_101_memberlogin","TestMemberLogin","","","test_03_PasswdError","密码错误"
+"passed","Thu Nov 07 11:11:37 CST 2019","Thu Nov 07 11:11:37 CST 2019","134","lifebyte_new_crm","test_101_memberlogin","TestMemberLogin","","","test_02_UsernameNotExit","用户名错误"
+"passed","Thu Nov 07 11:11:37 CST 2019","Thu Nov 07 11:11:37 CST 2019","465","lifebyte_new_crm","test_001_gettoken","TestGetToken","","","test_01_Normal","用户名，密码正确"
+"passed","Thu Nov 07 11:11:37 CST 2019","Thu Nov 07 11:11:38 CST 2019","128","lifebyte_new_crm","test_001_gettoken","TestGetToken","","","test_03_PasswdError","密码错误"
+"passed","Thu Nov 07 11:11:37 CST 2019","Thu Nov 07 11:11:37 CST 2019","174","lifebyte_new_crm","test_001_gettoken","TestGetToken","","","test_02_UsernameNotExit","用户名错误"
+"passed","Thu Nov 07 11:11:37 CST 2019","Thu Nov 07 11:11:37 CST 2019","403","lifebyte_new_crm","test_101_memberlogin","TestMemberLogin","","","test_01_Normal","用户名，密码正确"

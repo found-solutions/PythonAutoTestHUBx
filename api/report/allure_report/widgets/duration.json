@@ -1,0 +1,61 @@
+[ {
+  "uid" : "daf146ed17718b44",
+  "name" : "test_03_PasswdError",
+  "time" : {
+    "start" : 1573096297796,
+    "stop" : 1573096297939,
+    "duration" : 143
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d732d2c75b6d7484",
+  "name" : "test_02_UsernameNotExit",
+  "time" : {
+    "start" : 1573096297660,
+    "stop" : 1573096297794,
+    "duration" : 134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90d5bd088ab22cb9",
+  "name" : "test_01_Normal",
+  "time" : {
+    "start" : 1573096297247,
+    "stop" : 1573096297712,
+    "duration" : 465
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a88e0e125a454c1f",
+  "name" : "test_03_PasswdError",
+  "time" : {
+    "start" : 1573096297897,
+    "stop" : 1573096298025,
+    "duration" : 128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4cac11d5488956e0",
+  "name" : "test_02_UsernameNotExit",
+  "time" : {
+    "start" : 1573096297714,
+    "stop" : 1573096297888,
+    "duration" : 174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a03deb267d82eb50",
+  "name" : "test_01_Normal",
+  "time" : {
+    "start" : 1573096297247,
+    "stop" : 1573096297650,
+    "duration" : 403
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

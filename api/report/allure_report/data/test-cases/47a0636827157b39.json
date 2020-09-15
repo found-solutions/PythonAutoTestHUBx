@@ -1,0 +1,76 @@
+{
+  "uid" : "47a0636827157b39",
+  "name" : "test_03_PasswdError",
+  "fullName" : "lifebyte_new_crm.test_001_gettoken.TestGetToken#test_03_PasswdError",
+  "historyId" : "c40fd354b49313184d21e37e29b489d5",
+  "time" : {
+    "start" : 1573034556966,
+    "stop" : 1573034557097,
+    "duration" : 131
+  },
+  "description" : "密码错误",
+  "descriptionHtml" : "<p>密码错误</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "密码错误",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5b1403ffaf5a175c",
+      "name" : "log",
+      "source" : "5b1403ffaf5a175c.txt",
+      "type" : "text/plain",
+      "size" : 736
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "level_2"
+  }, {
+    "name" : "parentSuite",
+    "value" : "lifebyte_new_crm"
+  }, {
+    "name" : "suite",
+    "value" : "test_001_gettoken"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetToken"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-iunu"
+  }, {
+    "name" : "thread",
+    "value" : "20724-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "lifebyte_new_crm.test_001_gettoken"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "level_2" ]
+  },
+  "source" : "47a0636827157b39.json",
+  "parameterValues" : [ ]
+}

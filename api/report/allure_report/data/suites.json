@@ -1,0 +1,103 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "lifebyte_new_crm",
+    "children" : [ {
+      "name" : "test_001_gettoken",
+      "children" : [ {
+        "name" : "TestGetToken",
+        "children" : [ {
+          "name" : "test_01_Normal",
+          "uid" : "90d5bd088ab22cb9",
+          "parentUid" : "97d87a48d4df727453f3518c41b55ef5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1573096297247,
+            "stop" : 1573096297712,
+            "duration" : 465
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_02_UsernameNotExit",
+          "uid" : "4cac11d5488956e0",
+          "parentUid" : "97d87a48d4df727453f3518c41b55ef5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1573096297714,
+            "stop" : 1573096297888,
+            "duration" : 174
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_03_PasswdError",
+          "uid" : "a88e0e125a454c1f",
+          "parentUid" : "97d87a48d4df727453f3518c41b55ef5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1573096297897,
+            "stop" : 1573096298025,
+            "duration" : 128
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "97d87a48d4df727453f3518c41b55ef5"
+      } ],
+      "uid" : "a3bc25c24c0c3c63f74ed8a3efc7800d"
+    }, {
+      "name" : "test_101_memberlogin",
+      "children" : [ {
+        "name" : "TestMemberLogin",
+        "children" : [ {
+          "name" : "test_01_Normal",
+          "uid" : "a03deb267d82eb50",
+          "parentUid" : "8acd1226491b915d788c533be24c5057",
+          "status" : "passed",
+          "time" : {
+            "start" : 1573096297247,
+            "stop" : 1573096297650,
+            "duration" : 403
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_02_UsernameNotExit",
+          "uid" : "d732d2c75b6d7484",
+          "parentUid" : "8acd1226491b915d788c533be24c5057",
+          "status" : "passed",
+          "time" : {
+            "start" : 1573096297660,
+            "stop" : 1573096297794,
+            "duration" : 134
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_03_PasswdError",
+          "uid" : "daf146ed17718b44",
+          "parentUid" : "8acd1226491b915d788c533be24c5057",
+          "status" : "passed",
+          "time" : {
+            "start" : 1573096297796,
+            "stop" : 1573096297939,
+            "duration" : 143
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8acd1226491b915d788c533be24c5057"
+      } ],
+      "uid" : "5a1e00de0e21cab39f7ddf5b7500a759"
+    } ],
+    "uid" : "d9a7b2e5f83215d11de5cc86e098a897"
+  } ]
+}

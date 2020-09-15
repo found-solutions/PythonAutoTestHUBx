@@ -1,0 +1,76 @@
+{
+  "uid" : "e0b8d869f68537a2",
+  "name" : "test_01_Normal",
+  "fullName" : "lifebyte_new_crm.test_001_gettoken.TestGetToken#test_01_Normal",
+  "historyId" : "4b53da55827612f4e164b8191297a219",
+  "time" : {
+    "start" : 1573094793400,
+    "stop" : 1573094793855,
+    "duration" : 455
+  },
+  "description" : "用户名，密码正确",
+  "descriptionHtml" : "<p>用户名，密码正确</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "用户名，密码正确",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cba48c4c928914eb",
+      "name" : "log",
+      "source" : "cba48c4c928914eb.txt",
+      "type" : "text/plain",
+      "size" : 724
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "level_1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "lifebyte_new_crm"
+  }, {
+    "name" : "suite",
+    "value" : "test_001_gettoken"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetToken"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-iunu"
+  }, {
+    "name" : "thread",
+    "value" : "10124-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "lifebyte_new_crm.test_001_gettoken"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "level_1" ]
+  },
+  "source" : "e0b8d869f68537a2.json",
+  "parameterValues" : [ ]
+}

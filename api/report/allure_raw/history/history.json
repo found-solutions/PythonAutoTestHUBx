@@ -1,0 +1,134 @@
+{
+  "4b53da55827612f4e164b8191297a219" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "79b2911bed2cf44d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573094793400,
+        "stop" : 1573094793855,
+        "duration" : 455
+      }
+    }, {
+      "uid" : "6769f2670ba2c09b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'access_token' in {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200}\n +  where {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200} = <bound method Response.json of <Response [200]>>()\n +    where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+      "time" : {
+        "start" : 1573036393140,
+        "stop" : 1573036393267,
+        "duration" : 127
+      }
+    }, {
+      "uid" : "4517c15bdaae23ad",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'access_token' in {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200}\n +  where {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200} = <bound method Response.json of <Response [200]>>()\n +    where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+      "time" : {
+        "start" : 1573034556681,
+        "stop" : 1573034556822,
+        "duration" : 141
+      }
+    }, {
+      "uid" : "62c7240b6fde0583",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'access_token' in {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200}\n +  where {'code': 40001, 'debug': {'class': 'Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\HttpException', 'file': '/home/webmaste...Route->runController()', ...]}, 'message': 'The username or password you’ve entered is incorrect.', 'status_code': 200} = <bound method Response.json of <Response [200]>>()\n +    where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+      "time" : {
+        "start" : 1573034533375,
+        "stop" : 1573034533540,
+        "duration" : 165
+      }
+    } ]
+  },
+  "c40fd354b49313184d21e37e29b489d5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "15cbeb45e7630267",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573094793996,
+        "stop" : 1573094794131,
+        "duration" : 135
+      }
+    }, {
+      "uid" : "802a59b561c2a312",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573036393400,
+        "stop" : 1573036393528,
+        "duration" : 128
+      }
+    }, {
+      "uid" : "51f597099b7d09c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573034556966,
+        "stop" : 1573034557097,
+        "duration" : 131
+      }
+    }, {
+      "uid" : "18ddbe2c339f318d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573034533680,
+        "stop" : 1573034533845,
+        "duration" : 165
+      }
+    } ]
+  },
+  "1e920d259b6aa6bc558055dadd6295a3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "60653bb25d842ea6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573094793858,
+        "stop" : 1573094793994,
+        "duration" : 136
+      }
+    }, {
+      "uid" : "abda26b028c9d5c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573036393272,
+        "stop" : 1573036393398,
+        "duration" : 126
+      }
+    }, {
+      "uid" : "afec5e1cef465975",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573034556827,
+        "stop" : 1573034556963,
+        "duration" : 136
+      }
+    }, {
+      "uid" : "dc5c5fb749d98f55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573034533545,
+        "stop" : 1573034533678,
+        "duration" : 133
+      }
+    } ]
+  }
+}
