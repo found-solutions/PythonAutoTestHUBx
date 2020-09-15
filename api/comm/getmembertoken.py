@@ -59,11 +59,16 @@ def GetSocialToken():
 
 def CheckBrokerToken():
     header = GetBrokerHeader()
-    url = read_config('projectname', 'evn_baseurl') + '/api/showAllBrokerUsers'
-    data ={"current_page": 1,
-           "per_page": 50}
+    url = read_config('projectname', 'evn_baseurl') + '/api/queryMAMListInBroker'
+    date ={
+	      "platform": "web",
+	      "trading_server": "hub_ta_1",
+	      "per_page": 10,
+	      "current_page": 1,
+        "url": "https://stag-hubx.tm-nonprod.com/"
+}
     try:
-        r = webrequests().post_json(url = url,headers=header,data=data)
+        r = webrequests().get(url = url, params=date, headers=header)
         if '401' in r[1].text:
             GetBrokerToken()
     except BaseException as e:
