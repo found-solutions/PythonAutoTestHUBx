@@ -4,8 +4,6 @@ import pytest
 from comm.logger import Log
 from comm.readdoc import read_config, write_config
 from comm.requestmethod import webrequests
-import json
-from comm.getdict import getdict
 
 
 def GetBrokerToken():
@@ -21,11 +19,10 @@ def GetBrokerToken():
         "is_remembered": "false",
         "validate_cmd": 1
     }
-    a = json.dumps(data)
     try:
-        r = webrequests().post(url=_url, data=a, headers=_header)
+        r = webrequests().post(url=_url, data=data, headers=_header)
         if r[0] == 200:
-            token = getdict(r[1].json(),"user_with_token")
+            token = r[1].json()["user_with_token"]
             write_config("projectname","evn_brokeracctoken",token)
         else:
             pass
@@ -47,11 +44,10 @@ def GetSocialToken():
         "password": read_config('token','social_user_pw'),
         "url": "https://stag-hubx.tm-nonprod.com/"
     }
-    a = json.dumps(data)
     try:
-        r = webrequests().post(url=_url, data=a, headers=_header)
+        r = webrequests().post(url=_url, data=data, headers=_header)
         if r[0] == 200:
-            token = getdict(r[1].json(), "user_with_token")
+            token = r[1].json()["user_with_token"]
             write_config("projectname","evn_socialacctoken",token)
         else:
             pass
@@ -63,13 +59,11 @@ def GetSocialToken():
 
 def CheckBrokerToken():
     header = GetBrokerHeader()
-    url = read_config('projectname', 'evn_baseurl') + '/api/showAllBrokerUsers'
-    date ={"current_page":1,
-           "per_page":50
-           }
+    url = read_config('projectname', 'evn_baseurl') + '/api/queryTagList'
+    date ={"trading_server":"hub_ta_1"}
     try:
-        r = webrequests().post(url = url,data=date,headers=header)
-        if r[0] == 401:
+        r = webrequests().get(url = url,headers=header,params=date)
+        if '40013' in r[1].text:
             GetBrokerToken()
     except BaseException as e:
         Log().error(e)
@@ -78,10 +72,9 @@ def CheckSocialToken():
     header = GetSocialHeader()
     url = read_config('projectname', 'evn_baseurl') + '/api/countries'
     date = {"platform": "web"}
-    a = json.dumps(date)
     try:
-        r = webrequests().get(url = url,headers=header,params=a)
-        if r[0] == 401:
+        r = webrequests().get(url = url,headers=header,params=date)
+        if '40013' in r[1].text:
             GetSocialToken()
     except BaseException as e:
         Log().error(e)
