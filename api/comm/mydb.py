@@ -26,14 +26,15 @@ def mysql_db(sql):
             host=host,
             user=user,
             passwd=passwd,
-            port=port,
+            port=int(port),
             db=db,
             charset=charset)
-        cur = conn.cursor()  # 建立游标
     except BaseException:
         res = "数据库连接失败！"
         logs.error(res)
     else:
+        cur = conn.cursor()  # 建立游标
+        cur = conn.cursor(cursor=pymysql.cursors.DictCursor)  # 字典形式
         if sql.strip()[:6].upper() == 'SELECT':
             # res = cur.fetchall()
             cur.execute(sql)  # 执行sql
@@ -64,7 +65,7 @@ def ssh_server():
     # 获取当前文件的路径
     file_path = os.path.dirname(__file__)
     # 获取配置文件config.ini的路径
-    #config_path = os.path.join(file_path, 'private_key')
+    config_path = os.path.join(file_path, 'private_key')
 
     # 创建ssh连接
     ssh_host = read_config('projectname', 'ssh_address')
@@ -199,6 +200,6 @@ if __name__ == '__main__':
     #     else:
     #         result = "访问失败"
 
-    sql1 = "SELECT external_id FROM trading_accounts"
-    res1 = ssh_mysql(sql1)
+    sql1 = "SELECT leverage FROM `hubx_ta_stag`.`trading_leverage`"
+    res1 = mysql_db(sql1)
     print(res1)
