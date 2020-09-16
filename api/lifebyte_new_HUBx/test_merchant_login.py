@@ -8,7 +8,7 @@ from comm.logger import Log
 from comm.readdoc import read_config, write_config
 from comm.getdefname import get_current_function_name
 from comm.requestmethod import webrequests
-
+import json
 
 _header = {
     "Accept": read_config('projectname', 'evn_accept'),
@@ -29,10 +29,11 @@ class TestGetToken():
             "is_remembered": "false",
             "validate_cmd": 0
         }
+        a=json.dumps(data)
         Log().info("%s.%s" %(self.__class__.__name__,get_current_function_name()) +"     ***Test Start***")
 
         try:
-            r = webrequests().post(url=_url, data=data, headers=_header)
+            r = webrequests().post(url=_url, data=a, headers=_header)
             assert r[0] == 200
             assert 'user_with_token' in r[1].text
         except BaseException as e:
@@ -52,10 +53,11 @@ class TestGetToken():
             "is_remembered": "false",
             "validate_cmd": 0
         }
+        a=json.dumps(data)
         Log().info("%s.%s" %(self.__class__.__name__,get_current_function_name()) +"     ***Test Start***")
 
         try:
-            r = webrequests().post(url=_url, data=data, headers=_header)
+            r = webrequests().post(url=_url, data=a, headers=_header)
             assert r[0] == 403
             assert 'user_with_token' not in r[1].text
         except BaseException as e:
@@ -75,11 +77,12 @@ class TestGetToken():
             "is_remembered": "false",
             "validate_cmd": 0
         }
+        a=json.dumps(data)
         Log().info(
             "%s.%s" %(self.__class__.__name__,get_current_function_name()) +"     ***Test Start***")
 
         try:
-            r = webrequests().post(url=_url, data=data, headers=_header)
+            r = webrequests().post(url=_url, data=a, headers=_header)
             assert r[0] == 403
             assert 'user_with_token' not in r[1].text
         except BaseException as e:
