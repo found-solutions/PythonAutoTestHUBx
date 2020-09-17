@@ -3,8 +3,7 @@ from comm.logger import Log
 from comm.readdoc import read_config, write_config
 from comm.getdefname import get_current_function_name
 from comm.requestmethod import webrequests
-import json
-import random, string
+import random, string,json
 
 _header = {
     "Accept": read_config('projectname', 'evn_accept'),
