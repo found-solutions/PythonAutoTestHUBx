@@ -8,6 +8,8 @@ from comm.logger import Log
 from comm.readdoc import read_config, write_config
 from comm.getdefname import get_current_function_name
 from comm.requestmethod import webrequests
+from comm.getmembertoken import CheckBrokerToken
+from comm.getmembertoken import GetBrokerToken
 import json
 import random, string
 
@@ -24,7 +26,7 @@ class TestGetToken():
 
     @pytest.mark.level_1
     def test_01_Normal(self):
-        '''用户名，密码正确'''
+        '''新增正确的account'''
         data = {
             "confirm_pwd": "Lb123456",
             "group_name":"AutoTest Group12",
