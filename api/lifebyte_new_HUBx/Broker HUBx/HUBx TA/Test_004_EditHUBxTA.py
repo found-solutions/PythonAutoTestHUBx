@@ -30,12 +30,13 @@ sql2 = "SELECT NAME FROM `hubx_ta_stag`.`trading_group`"
 sql3 = "select id from  `hubx_ta_stag`.`trading_tag`"
 sql4 = "SELECT id,name FROM `hubx_ta_stag`.`trading_account`"
 
-
+'''从数据库获取下面字段的值'''
 leverage = mydb.mysql_db(sql1)
 groupname = mydb.mysql_db(sql2)
 tag = mydb.mysql_db(sql3)
 tradingaccount = mydb.mysql_db(sql4)
 
+'''将获取的值转化为新的list'''
 _leverage = getdict.getlist(leverage)
 _groupname = getdict.getlist(groupname)
 _tag = getdict.getlist(tag)

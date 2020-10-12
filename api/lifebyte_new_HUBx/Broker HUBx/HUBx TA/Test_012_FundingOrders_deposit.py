@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Author ：jenny
-# @Time   ：2020/9/14 13:43
+# @Time   ：2020/9/29 13:43
 # @IDE    ：PyCharm
 import json
 
@@ -25,33 +25,31 @@ _header = {
     "Authorization":"Bearer " +  read_config('projectname', 'evn_brokeracctoken')
 }
 
-_url = read_config('projectname', 'evn_baseurl') + '/api/createHUBxTA'
-
-'''设置某些字段参数为全局变量'''
-sql1 = "SELECT leverage FROM `hubx_ta_stag`.`trading_leverage`"
-sql2 = "SELECT NAME FROM `hubx_ta_stag`.`trading_group`"
-
-leverage = mydb.mysql_db(sql1)
-#groupname = mydb.mysql_db(sql2)
-
-_leverage = getdict.getlist(leverage)
-#_groupname = getdict.getlist(groupname)
+_url = read_config('projectname', 'evn_baseurl') + '/api/quickFunding'
 
 
-class TestCreateHUBxTA():
+'''查询数据库中所有TA'''
+sql1 = "SELECT id,name FROM `hubx_ta_stag`.`trading_account`"
+
+'''执行sql语句，查询出所有TA'''
+tradingaccount = mydb.mysql_db(sql1)
+
+'''将查询出来的TA,转化成新的list'''
+_tradingaccount = getdict.getlist(tradingaccount)
+
+
+
+class TestFundingOders_deposit():
 
 
     @pytest.mark.level_1
     def test_01_Normal(self):
-        '''正常创建HUBxTA '''
+        '''随机选出HUBxTA入金 '''
         data ={
-            "trading_server": "hub_ta_1",
-            "leverage": random.choice(_leverage),
-            "group_name": "Group01",#random.choice(_groupname),
-            "ta_name": "jenny{}".format(''.join(random.sample(string.digits, 2))),
-            "password": "Lb123456",
-            "confirm_pwd": "Lb123456",
-            "pin": "1234"
+            "transaction_type": "deposit",
+            "funding_amount": 1500,
+            "trading_account":  random.choice(_tradingaccount),
+            "trading_server": "hub_ta_1"
         }
 
 
@@ -67,6 +65,7 @@ class TestCreateHUBxTA():
             Log().info("=========>>PASSED")
         finally:
             Log().info("%s.%s" % (self.__class__.__name__, get_current_function_name()) + "     ***Test End***\n")
+
 
 
 if __name__ == '__main__':
